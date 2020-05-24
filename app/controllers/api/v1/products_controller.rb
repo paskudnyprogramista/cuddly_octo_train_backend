@@ -18,7 +18,7 @@ module Api
       end
 
       def resource_serializer
-        Api::V1::ProducSerializer
+        Api::V1::ProductSerializer
       end
     end
   end
