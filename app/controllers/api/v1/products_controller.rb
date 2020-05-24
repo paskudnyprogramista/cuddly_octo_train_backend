@@ -4,7 +4,11 @@ module Api
   module V1
     class ProductsController < ApplicationController
       def index
-        render json: { products: :index }
+        render_serialized_payload { serialize_collection(collection) }
+      end
+
+      def show
+        render_serialized_payload { serialize_resource(resource) }
       end
 
       private
