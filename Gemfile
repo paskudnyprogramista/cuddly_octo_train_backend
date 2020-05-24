@@ -28,6 +28,8 @@ end
 
 group :development do
   gem 'listen', '~> 3.2'
+  gem 'rubocop', '~> 0.84.0', require: false
+  gem 'rubocop-rails', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
