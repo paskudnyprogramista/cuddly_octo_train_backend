@@ -1,9 +1,10 @@
+# frozen_string_literal: true
 
 host = ENV.fetch('DEFAULT_URL_HOST')
 
 protocol = Rails.application.config.force_ssl ? 'https' : 'http'
 
 Rails.application.routes.default_url_options.merge!(
-    host: host,
-    protocol: protocol
+  host: host,
+  protocol: protocol
 )
