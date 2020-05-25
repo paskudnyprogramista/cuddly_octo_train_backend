@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::API
+  # https://jsonapi.org
   CONTENT_TYPE = 'application/vnd.api+json'
 
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found

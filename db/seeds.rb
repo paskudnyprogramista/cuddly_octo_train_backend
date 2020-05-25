@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-products = Product.create(
-  { sku: 'FR1', name: 'Fruit Tea', 3.11 },
-  { sku: 'AP1', name: 'Apple', 5.00 },
-  { sku: 'CF1', name: 'Coffee', 11.23 }
-)
+products = Product.create([
+                            { sku: 'FR1', name: 'Fruit Tea', price: 3.11 },
+                            { sku: 'AP1', name: 'Apple', price: 5.00 },
+                            { sku: 'CF1', name: 'Coffee', price: 11.23 }
+                          ])
