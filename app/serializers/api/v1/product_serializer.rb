@@ -2,9 +2,7 @@
 
 module Api
   module V1
-    class ProductSerializer
-      include FastJsonapi::ObjectSerializer
-
+    class ProductSerializer < BaseSerializer
       attributes :sku, :name, :price
     end
   end
