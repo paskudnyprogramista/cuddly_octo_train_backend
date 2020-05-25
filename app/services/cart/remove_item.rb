@@ -7,7 +7,7 @@ module Cart
         ApplicationRecord.transaction do
           line_item.destroy!
 
-          # recalculate
+          Cart::RecalculateCart.call(order: order)
         end
 
         success(line_item)

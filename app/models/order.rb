@@ -26,7 +26,6 @@ class Order < ApplicationRecord
   class << self
     def generate_order_number
       # Base36 coding
-      #
       SecureRandom.random_number(36**7).to_s(36).upcase
     end
   end
