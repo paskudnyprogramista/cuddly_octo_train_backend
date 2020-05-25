@@ -27,6 +27,7 @@ gem 'fast_jsonapi'
 
 group :development do
   gem 'listen', '~> 3.2'
+  gem 'letter_opener'
   gem 'rubocop', '~> 0.84.0', require: false
   gem 'rubocop-rails', require: false
 end
