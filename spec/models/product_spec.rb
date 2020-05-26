@@ -7,7 +7,7 @@ RSpec.describe Product, type: :model do
   it { is_expected.to validate_presence_of(:name) }
   it { is_expected.to validate_presence_of(:price) }
 
-  it { is_expected.to validate_numericality_of(:price) }
+  it { should have_many(:line_items) }
   it { should validate_numericality_of(:price).is_greater_than_or_equal_to(0) }
   it { should allow_value(1.01).for(:price) }
   it { should allow_value(1.034).for(:price) }
