@@ -25,6 +25,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'fast_jsonapi'
 
+gem 'rack-cors'
+
 group :development do
   gem 'letter_opener'
   gem 'listen', '~> 3.2'
