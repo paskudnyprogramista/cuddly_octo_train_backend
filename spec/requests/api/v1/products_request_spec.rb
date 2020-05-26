@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Api::V1::Products', type: :request do
-  describe '.index' do
+  describe '#index' do
     let!(:products) { create_list(:product, 3) }
 
     before { get '/api/v1/products' }
@@ -17,7 +17,7 @@ RSpec.describe 'Api::V1::Products', type: :request do
     end
   end
 
-  describe '.show' do
+  describe '#show' do
     let!(:product) { create(:product) }
 
     let(:expected_json_response) do
