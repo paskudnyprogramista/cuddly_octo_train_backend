@@ -33,6 +33,7 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-json_expectations'
   gem 'shoulda-matchers'
 end
 
@@ -43,6 +44,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.0'
 
   gem 'dotenv-rails'
+
+  gem 'factory_bot_rails'
+
+  gem 'faker'
+  gem 'rubocop-faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

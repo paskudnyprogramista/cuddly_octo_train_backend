@@ -18,7 +18,7 @@ class Order < ApplicationRecord
   end
 
   def send_order_confirmation_email
-    # TODO: Impl OrderMailer
+    # TODO: Impl OrderMailer service
 
     update_column(:confirmation_delivered, true)
   end
