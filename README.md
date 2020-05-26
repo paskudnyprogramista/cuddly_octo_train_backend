@@ -1,24 +1,23 @@
-# README
+# cuddly_octo_train_backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Cuddly Octo Train Store Backend build with RoR
 
-Things you may want to cover:
+# Setup
 
-* Ruby version
+## Dependencies
 
-* System dependencies
+```bash
+$ bundle install
+```
 
-* Configuration
+## DB Seed
 
-* Database creation
+```bash
+$ bundle exec rails db:seed
+```
 
-* Database initialization
+## Test
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ bundle exec rspec
+```
